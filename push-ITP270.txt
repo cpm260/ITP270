@@ -1,0 +1,8 @@
+# Add to bash Profile
+
+function push-ITP270(){
+	git add $1 && git commit -m $2
+	git branch -M main
+	git remote add origin git@github.com:cpm260/ITP270.git
+	git push -u origin main
+}
